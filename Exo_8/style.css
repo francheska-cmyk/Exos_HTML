@@ -1,0 +1,11 @@
+h1{
+    text-shadow: 6px 6px 6px violet;
+}
+
+h1>p {
+    box-shadow: 10px 10px 10px pink;
+}
+
+#deuxieme {
+    box-shadow: -10px -10px greenyellow;
+}

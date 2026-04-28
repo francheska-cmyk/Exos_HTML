@@ -1,0 +1,60 @@
+#premier {
+    color: violet;
+    font-weight: bold;
+}
+
+#site {
+    /* : pas besoin d'ajouter le display car on a déjà un table. display : inline-table; */ 
+    border: double violet 3px;
+    margin : 1em;
+    border-collapse: collapse;
+
+}
+
+[id^="titre"] {
+    background-color: aqua;
+    border: solid 3px;
+}
+
+table th, table td {
+    border: solid 2px;
+    text-align: center;
+}
+
+table{
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 30px solid transparent; /* L'épaisseur de votre image */
+    border-image-source: url(../images/image_cadre.jpg);
+    border-image-slice: 80; /* Ajustez selon votre image */
+    /* border-image-repeat: round;  */
+    /* Répète l'image sans la couper */
+    /* border-image-source: repeating-linear-gradient(45deg, transparent, blue, 20px); */
+    /* border-image-source: url(/images/image_cadre.jpg); */
+    margin: 1em;
+}
+
+td, th {
+  border: 1px solid #ccc; /* Bordures classiques pour l'intérieur */
+  padding: 10px;
+}
+p{
+    border-image-source: radial-gradient( ellipse at center, #f0f9ff 0%,#a1dbff 100% )
+    }
+    /* border-style: solid; */
+	/* border-width: 50px;
+	border-image-source: url(/images/image_cadre.jpg);
+	border-image-slice: 142 142 142 142; /* haut | droit | bas | gauche */
+	/* border-image-width: 50px; */ */
+    /* border-image-source: repeating-linear-gradient(45deg, transparent, blue, 20px); */
+    /* border-image-source: url(/images/image_cadre.jpg); */
+
+
+caption {
+    font-weight: bold;
+    color: brown;
+}
+
+th{
+    background-color: coral;
+}

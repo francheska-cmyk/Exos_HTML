@@ -1,0 +1,24 @@
+h1{
+    color: blue;
+}
+h1:hover {
+    color: green;
+}
+
+p:active {
+    background-color: gray;
+}
+
+a:visited {
+    color: gray;
+}
+
+a:link {
+    color: orangered;
+
+}
+
+img:hover {
+    display: none;
+}
+    /* opacity: 0% à la place de display; * à faire si le display ne marche pas. Mais il n'a pas le même comportement que display car l'élément ne disparait, donc ça laisse un vide à sa place dans le paragraphe/

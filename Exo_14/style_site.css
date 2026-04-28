@@ -1,0 +1,59 @@
+body{
+    background-color: aliceblue;
+}
+
+header h1{
+    color: red;
+    text-align: center;
+    font-size: 3em;
+    
+}
+header img {
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
+}
+
+article h1{
+    color:darkblue;
+    font-size: 1em;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
+
+article img {
+    border: 0.5px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
+}
+ul{
+    list-style-type: none;
+}
+#principal {
+    text-align: center;
+}
+
+#secondaire {
+    text-align:right;
+}
+
+article {
+    height:max-content;
+    width: 100%;
+    border: 1px solid black;
+
+}
+
+a{
+    color :red
+}
+
+a:visited{
+    color: gray;
+}
+
+.req {
+    color: red;
+}

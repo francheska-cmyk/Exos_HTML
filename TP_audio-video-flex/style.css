@@ -1,0 +1,49 @@
+header{
+    text-align: center;
+}
+
+main {
+    display: flex;
+    gap: 20px;
+    /* justify-content: center; */
+    /* flex-flow: row wrap; /*Pour faire le retour à la ligne automatique*/
+}
+
+article {
+    display: flex;
+    flex-flow: row wrap; 
+    width: auto;
+    height: auto;
+    background-color: aliceblue;
+    border-radius: 10px;
+    border: solid 1px gray;
+    padding: 10px;
+    justify-content: center;
+}
+article:nth-of-type(3){
+    align-content: center;
+    display:table-column ;
+    text-align: center;
+    flex: 1 1 300px ;
+
+}
+
+article:nth-of-type(1){
+    flex: 2 1 500px; 
+}
+/*flex contient 3 propriétes, flex grow, flex shrink, flex basics*/
+
+article:nth-of-type(2){
+    max-height: 1 1 300px;
+}
+
+video{
+    width: 100%;
+    aspect-ratio:16/9;
+
+}
+
+iframe{
+    width: 100%;
+    aspect-ratio:16/9;
+}

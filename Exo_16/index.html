@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="style.exo16.css"/>
+    <title>Exercice16</title>
+</head>
+<body>
+    <form method ="POST" action="#">
+
+        <h1>Connexion</h1>
+        
+        <!-- PAS BESOIN DE CREER DES CLASS SUR LES DIV, ON PEUT DIRECTEMENT LES CIBLER GRACE AU FORMULAIRE AVEC LE CHILD, et le id pour les boutons de connexion -->
+        <div> 
+            <label for="pseudo">Pseudo:</label> 
+            <input type="text" name="pseudo" placeholder="Mon pseudo"  minlength="2" maxlength="20" id="pseudo"/>
+            </div>
+          
+        <div>
+            <label for="mdp">Mot de passe:</label>
+            <input type="password" name="mdp" placeholder="Mon mot de passe" id="mdp"/>
+        </div>
+            
+        <div>
+            <input type="checkbox" name =remember id="remember" checked=""/> <label for="remember">Se souvenir de moi</label>
+        </div>
+
+        <div>
+            <button type="submit" value="connexion" id="connexion"> Connexion</button>
+            <button type="reset" value="retour" id="retour">Retour</button>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_site.css"/>
+
+    <title>Mon premier site</title>
+</head>
+<body>
+    <header>
+        <img src="https://picsum.photos/600/200" alt="image d'en tête du site">
+        <h1><stong>Bienvenue sur mon site !</stong></h1>
+        <nav aria-label="menu princial" id="principal"> 
+            <ul>
+                <li><a href="./index.html" target="_blank">Accueil</a></li>
+                <li><a href="#" target="_blank">Blog</a></li>
+                <li><a href="#" target="_blank">Galerie</a></li>
+                <li><a href="./contact.html" target="_blank">Contact</a></li>
+            </ul> 
+        </nav>
+    </header>
+
+    <main>
+        <form method ="POST" action="#">
+        <fieldset>
+            <legend>Contact</legend>
+        
+            <div>
+                <label for="nom">Nom:<span class="req">*</span></label> 
+                <input type="text" name="nom" placeholder="Ex:Robert"  minlength="2" maxlength="20" id="nom" required />
+            </div>
+          
+            <div>
+                <label for="email">E-mail:<span class="req">*</span></label>
+                <input type="text" name="email" required="" placeholder="Ex:monMail@FAI.com" id="email" required />
+            </div>
+            
+           
+            <div>
+                <label for="commentaire">Laissez un commentaire:</label>
+                <div>
+                    <textarea rows="10" cols="70" placeholder="Je dépose mon avis :)" id="commentaire"> </textarea>
+                </div>
+            </div>
+
+            <div>
+                <input type="checkbox" id="checkbox" checked=""/> <label for="language">Envoyer une copie par E-mail !</label>
+            </div>
+
+            <div>
+                <button type="submit" value="Envoyer"> Envoyer</button>
+                <button type="reset" value="reset">Reset</button>
+
+            </div>
+            
+
+        
+
+        </fieldset>
+    
+
+        </form>
+            
+    
+    </main>
+
+    <footer>
+        <nav aria-label="menu secondaire" id="secondaire"> 
+            <ul>
+                <li><a href="#" target="_blank">Menu 1</a></li>
+                <li><a href="#" target="_blank">Menu 2</a></li>
+                <li><a href="#" target="_blank">Menu 3</a></li>
+                <li><a href="#" target="_blank">Menu 4</a></li>
+            </ul> 
+        </nav>
+    </footer>
+
+    
+</body>
+</html>

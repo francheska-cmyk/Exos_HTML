@@ -1,0 +1,20 @@
+img:hover{
+    transform: scale(2);
+    transition: transform 1s;
+}
+
+div{
+    display: block;
+    background-color: burlywood;
+    width: 300px;
+    height: max-content;
+    border-radius:10px ;
+    border: 1em solid black ;
+}
+
+.animation{
+    animation-duration: 5s;
+    animation-name: grow-shrink;
+    rotate:
+}
+

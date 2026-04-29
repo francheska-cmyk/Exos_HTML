@@ -1,0 +1,120 @@
+@font-face {
+        font-family: "Montserrat";
+        src: url(https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap);
+    }
+    
+body{
+    font-family: "Montserrat";
+    margin: 0; /*Sert à retirer le margin automatiquement mis par le navigateur*/
+}
+
+header{
+    background-color: rgba(0, 81, 255, 0.938);
+    color: whitesmoke;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /*justify content c'est pour le container, donc parent auquel on applique flex*/
+    padding: 5vh;
+}
+
+.logo {
+    justify-content: flex-start;
+    font-weight: bold;
+}
+nav{
+    justify-content:flex-end;
+}
+a{
+    color: inherit;
+    /*On peut mettre à la place inherit, plutot que de répéter la couleur*/
+    text-decoration: none; /*Pour retirer le soulignement de hyperlink*/
+    padding: 3px;
+
+}
+
+footer{
+    background-color:rgba(0, 81, 255, 0.938);
+    color: whitesmoke;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    padding: 1% 2%;
+}
+.hero{
+    background-image:linear-gradient(to top, #4481eb 0%, #04befe 100%);
+    color: whitesmoke;
+    text-align: center;
+    padding: 10vh; /*Augmente la taille du bloc*/
+    
+    
+}
+
+button{
+    border-radius: 60px;
+    background-color:rgb(255, 196, 0) ;
+    color: black;
+    font-size: medium; /*poor la taille du texte du bouton*/
+    text-align: center;
+    height: 4vh; /*augmente la taille du bouton*/
+    width: 15vh; /*augmente la largeur du bouton, attention l'augmentation de la largeur n'est pas pareil que celle de la hauteur*/
+}
+button:hover{
+    transform: scale(1.05); /*Permet un mini zoom au passage de la sourire sur le bouton*/
+}
+
+h2{
+    color: blue;
+    font-weight: bold;
+}
+
+img{
+    border-radius: 20px;
+}
+
+.themes{
+    text-align: center; /* le center ici permet d'avoir les images, titres, paragraphe des enfants alignés au centre*/
+    width:fit-content; /*Permet de délimiter ma grille au contenu, sans ça, la section prend toute la largeur de l'écran*/
+}
+
+.themes-grid {
+    display: grid;
+/* j'applique display grid ici, car c'est mon contener, mon parent*/
+    grid-template-columns: 1fr 1fr;
+    /* c'est ici que je détermine les colonnes de ma grille*/
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 5vh;
+    margin: 10px ;
+    
+}
+
+.theme-card{
+    border : 1px solid rgba(0, 0, 0, 0.007);
+    border-radius: 24px;
+    padding: 10px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+
+
+    /* width: 50%;
+    height: 50%;  je n'ai pas besoin de définir la hauteur et la largeur des theme-card car ce sont les enfants de themes-grid qui est déjà en grid, avec le grid-gap qui délimite chaque case du grid, donc qui délimité les theme-card*/
+    
+    
+
+    /*border-radius: 24px;
+    justify-content: center;
+    margin: 20px;
+    border: 1px solid black ;
+    padding: 10vh;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px; ; */ 
+
+
+h3{
+    color: dodgerblue;
+}
+/* .theme-card{
+    width: auto;
+    height: 100% ;
+    border : 1em solid white;
+    border: radius 30px;
+} */
